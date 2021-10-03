@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+  --first_color:black;
+  --second_color:white;
+}
+.dark_theam{
+    --first_color:white;
+    --second_color:black;
+  }
+
+body{
+    background-color:var(--second_color)!important;
+}
+.navbar{
+    background-color: transparent;
+}
+ .navbar-toggle .icon-bar{
+color:#FF0066 !important;
+}
+.nav li a{
+    margin: 10px !important;
+    color:var(--first_color) !important;
+}
+.nav li a:hover{
+    padding: 10px 30px !important;
+    background-color: #FF0066 !important;
+    border-radius: 30px !important;
+}
+#bbtn{
+    margin: 20px !important;
+    background-color:#FF0066;
+}
+.navbar-brand{
+ color:var(--first_color) !important;
+}
+
+ .img img{
+    z-index: 1 !important;
+    position: absolute !important;
+    top:0px !important;
+    left:0px !important;
+}
+.img #blob{
+    z-index:-5!important;
+
+}
+.text h2{
+    color: var(--first_color);
+    margin:40px 60px;
+}
+.text h3{
+    color: var(--first_color);
+    margin:40px 60px;
+}
+.contect i{
+margin:30px !important;
+    display: inline-block !important;
+    font-size: 20px !important;
+}
+.fa-twitter,.fa-linkedin{
+   color: blue !important;
+}
+.fa-dribbble{
+    color: #F082AC;
+}
+.fa-instagram{
+   color:  #DD2A78 !important;
+    
+}
+.fa-github{
+    color: var(--first_color);
+}
+.text a{
+ padding: 10px 30px;
+ background-color:#FF0066;
+ border-radius: 30px;
+ text-align: center;
+ color:var(--first_color);
+ list-style: none !important;
+ margin: 50px;
+}
+#icon{
+    cursor: pointer;
+}

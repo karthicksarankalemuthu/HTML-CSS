@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>dark-light mood</title>
+</head>
+<body>
+    <div class="continer-fulid">
+        <nav class="navbar ">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" id="bar" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span  class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Rahul</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">profile</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li><a href="#">exprience</a></li>
+                  <button class="btn btn-navbar" id="bbtn">hire me</button>
+                  <span id="icon"><i class="fas fa-moon"></i></span>
+                </ul>
+             </div>
+              </div>
+            </div>
+        <div class="text col-lg-6 col-md-6 col-sm-12">
+            <h3>hello  guy's</h3>
+          <h2>I'm Rahul</h2>
+          <h2>UI/UX Designer and</h2>
+          <h2>Frontend Developer</h2>
+          <a>Hire Me</a>
+          <div class="contect">
+            <i class="fab fa-dribbble"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin"></i>
+           
+          </div>
+        </div>
+         <div class="img col-lg-6 col-md-6 col-sm-12" >
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FF0066" d="M60,-59.2C75.6,-44.4,84.6,-22.2,83.4,-1.2C82.1,19.7,70.6,39.4,55,53.7C39.4,67.9,19.7,76.7,0.9,75.8C-18,75,-35.9,64.4,-52.5,50.2C-69.2,35.9,-84.4,18,-85.1,-0.7C-85.8,-19.4,-72,-38.8,-55.4,-53.6C-38.8,-68.5,-19.4,-78.8,1.4,-80.2C22.2,-81.6,44.4,-74.1,60,-59.2Z" transform="translate(100 100)" />
+              </svg>
+            <img src="men.png" alt="img"/>
+        </div> 
+        
+        
+    </div>
+    <script type="text/javascript">
+      var icon=document.getElementById("icon")
+      icon.addEventListener("click",()=>{
+        document.body.classList.toggle("dark_theam")
+        icon.innerHTML='<i class="fas fa-sun"></i>';
+        icon.style.color="yellow"
+        if(document.body.classList.contains("dark_theam")){
+          icon.innerHTML='<i class="fas fa-sun"></i>'
+        }
+        else{
+          icon.innerHTML='<i class="fas fa-moon"></i>';
+          icon.style.color="black"
+        }
+      })
+
+    </script>
+</body>
+</html>
